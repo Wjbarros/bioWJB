@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenderson de Jesus Barros</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+            padding: 10px;    
+        }
+
+        header {
+            grid-column: span 12;
+            background-color: #4169E1;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            border-radius: 10px;
+            max-width: 100%;
+            margin-top: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 5px 0;               
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 25px;
+            color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: #808080;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .imagem {
+            align-self: center;    
+        }
+
+        .imagem img {
+            width: 100%;
+            height: auto;
+            border: 2px blue solid;
+            border-radius: 20px;
+            margin-top: 40px;            
+        }
+
+        .principal {
+            text-align: justify;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            margin-left: 8px;                
+        }
+
+        footer {
+            grid-column: span 12;
+            text-align: center;
+            padding: 5px;
+            background-color: #4169E1;
+            color: white;
+            position: relative;
+            bottom: 1px;
+            width: 100%;    
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 769px) {
+            .container {
+                grid-template-columns: 1fr;    
+            }
+
+            .menu {
+                flex-direction: flex; 
+                gap: 6px;
+            }
+
+            li {
+                margin-bottom: 18px;
+            }
+
+            .imagem {
+                grid-column: span 12;
+                margin-bottom: 15px;
+                text-align: center;    
+            }
+
+            .principal {
+                grid-column: span 11;
+                margin-top: auto;
+            }
+                                
+            header {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            a {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 5px;
+                font-size: 15px;
+                position: relative;  
+            }
+        }
+            /* Responsividade para dispositivos entre 769px e 1024px */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(6, 1fr);    
+            }
+
+            .imagem {
+                grid-column: 2 / span 4;
+            }
+
+            .principal {
+                grid-column: 2 / span 4;
+                padding: 0;
+            }
+        }
+
+        /* Responsividade para dispositivos acima de 1024px */
+        @media (min-width: 1025px) {
+            .container {
+                grid-template-columns: repeat(12, 1fr);
+            }
+
+            .imagem {
+                grid-column: 3 / span 8;
+            }
+
+            .principal {
+                grid-column: 3 / span 8;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>  
+        <header>
+            <h1>Biografia Wenderson Barros</h1>
+        </header>       
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><b>Quem sou eu?</b></a></li>
+                <li><a href="formacao.html"><b>Formação Acadêmica</b></a></li>
+                <li><a href="portfolio.html"><b>Portfólio</b></a></li>
+                <li><a href="contato.html"><b>Contato</b></a></li>
+            </ul>
+        </nav>   
+    <div class="container">
+        <aside class="imagem">
+            <img src="Imagens Biografia/Imagem.1.jpeg" alt="Foto de Wenderson">
+        </aside>
+        <section class="principal">
+            <h1 style="color: #0000FF; text-align: center;">Wenderson de Jesus Barros</h1>
+            <p style="font-size: 20px; line-height: auto;">Com idade de 33 anos, atualmente mora em Barro Alto-GO, mas é natural de Caiapônia-Go. Um profissional dedicado tanto na vida pessoal quanto na carreira. Casado e pai de uma menina chamada Maria, Wenderson valoriza a família e busca o equilíbrio entre seus compromissos profissionais e familiares.
+            Trabalha em uma mineradora multinacional, onde atua no departamento de Segurança do Trabalho como Técnico em Segurança do Trabalho e Instrutor de Treinamentos. Sua experiência nesse setor reflete seu comprometimento com a segurança e bem-estar dos colaboradores, garantindo que as operações sejam realizadas de maneira segura e eficiente.
+            Além de sua carreira consolidada na área de Segurança do Trabalho, ele está expandindo seus horizontes ao iniciar uma nova jornada na Engenharia de Software. Com um ano e meio de estudos está começando seus primeiros projetos, ele está determinado a se tornar um profissional competente nessa área em crescimento, mostrando sua capacidade de adaptação e vontade de aprender.
+            Wenderson é um exemplo de resiliência e dedicação, equilibrando suas responsabilidades familiares com o crescimento profissional em duas áreas distintas, mas igualmente desafiadoras.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Wenderson de Jesus Barros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
