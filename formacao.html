@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenderson de Jesus Barros</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;    
+        }
+
+        header {
+            background-color: #4169E1;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 5px 0;               
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 25px;
+            color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: #808080;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .imagem, .principal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagem img {
+            max-width: 100%;
+            height: 500px;
+            border: 2px blue solid;
+            border-radius: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+
+        .principal {
+            text-align: justify;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4169E1;
+            color: white;
+            margin-bottom: 1px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 769px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .imagem, .principal {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .imagem img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .menu {
+                flex-direction: flex; 
+                gap: 6px;
+            }
+
+            li {
+                margin-bottom: 18px;
+            }
+
+            header {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            a {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 5px;
+                font-size: 15px;
+                margin-bottom: 1px;
+            }
+        }
+
+        /* Responsividade para telas maiores de 769px e menores de 1024px */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .imagem, .principal {
+                flex-direction: row;
+            }
+
+            .imagem {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Responsividade para telas  maiores de 1025px */
+        @media (min-width: 1025px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .imagem, .principal {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biografia Wenderson Barros</h1>
+    </header>        
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html"><b>Quem sou eu?</b></a></li>
+            <li><a href="#formacao"><b>Formação Acadêmica</b></a></li>
+            <li><a href="portfolio.html"><b>Portfólio</b></a></li>
+            <li><a href="contato.html"><b>Contato</b></a></li>  
+        </ul>
+    </nav>    
+    <div class="container">
+        <div class="imagem">
+            <img src="Imagens Biografia/Imagem.2.jpeg" alt="Foto de Wenderson">
+        </div>
+        <div class="principal">
+            <p style="font-size: 20px; line-height: auto; text-align: justify;"><b>Wenderson de Jesus Barros</b> é um profissional com uma formação acadêmica diversificada. Atualmente, está cursando Ensino Superior em Engenharia de Software pelo Centro Universitário Internacional, com previsão de conclusão em 2027. Ele é pós-graduado em Higiene Ocupacional pelo Centro Universitário Celso Lisboa, onde estudou entre 2022 e 2023. Também se formou como Técnico de Segurança do Trabalho pela Residência Educação, curso que completou entre 2021 e 2022. Anteriormente, Wenderson concluiu sua graduação em Gestão em Agronegócio pela FESURV - Universidade de Rio Verde, Campus Caiapônia - GO, no período de 2009 a 2012.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Wenderson de Jesus Barros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenderson de Jesus Barros</title>
+    <style>
+         body {
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;    
+        }
+
+        header {
+            background-color: #4169E1;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 5px 0;               
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 25px;
+            color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: #808080;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .imagem, .principal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imagem img {
+            max-width: 100%;
+            height: 500px;
+            border: 2px red solid;
+            border-radius: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+
+        .principal {
+            text-align: justify;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4169E1;
+            color: white;
+            margin-bottom: 1px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .imagem img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 90%;
+                height: auto;
+            }
+
+            .menu {
+                flex-direction: flex; 
+                gap: 10px;
+            }
+
+            li {
+                margin-bottom: 12px;
+            }
+                                      
+            header {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            a {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 5px;
+                font-size: 15px;
+                position: relative;  
+            }
+        }
+        /* Layout para telas entre 769px e 1024px */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .imagem, .principal {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .imagem img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            header {
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            a {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+
+            footer {
+                padding: 5px;
+                font-size: 15px;
+                margin-bottom: 1px;
+            }
+        }
+
+        /* Layout para tela maiores de 1024px */
+        @media (min-width: 1025px) {
+            .container {
+                grid-template-columns: repeat(12, 1fr);
+            }
+
+            .imagem {
+                grid-column: 3 / span 8;
+            }
+
+            .principal {
+                grid-column: 3 / span 8;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>  
+        <header>
+            <h1>Biografia Wenderson Barros</h1>
+        </header>       
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><b>Quem sou eu?</b></a></li>
+                <li><a href="formacao.html"><b>Formação Acadêmica</b></a></li>
+                <li><a href="portfolio.html"><b>Portfólio</b></a></li>
+                <li><a href="contato.html"><b>Contato</b></a></li>
+            </ul>
+        </nav>   
+    <div class="container">
+        <aside class="imagem">
+            <img src="Imagens Biografia/imagen.3.gif" alt="Foto de Wenderson">
+        </aside>
+        <section class="principal">
+            <p style="font-size: 20px; line-height: auto;">
+                Estou atualmente trabalhando na criação dos meus primeiros portfólios, onde irei compartilhar meus projetos e experiências na área de Engenharia de Software. Assim que estiverem finalizados, irei publicá-los aqui na página. Fique atento para acompanhar as novidades!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Wenderson de Jesus Barros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
